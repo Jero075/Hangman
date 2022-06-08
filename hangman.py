@@ -1,3 +1,29 @@
+from random import randint
+
+wordlist = []
+"""wordlist = ["Adult", "Age", "Amount", "Area",
+            "Back", "Bed", "Blood", "Body", "Book", "Box", "Boy", "Bulb", "Bunch", "Business",
+            "Camera", "Chicken", "Child", "Chocolate", "City", "Clothes", "Colony", "Colors", "Company", "Computer", "Continent", "Council", "Country", "Course", "Cycle",
+            "Dates", "Day", "Death", "Desk", "Door",
+            "Egg",
+            "Face", "Fact", "Factory", "Family", "Farm", "Farmer", "Father","Fish", "Floor", "Flowers", "Food", "Fridge", "Future",
+            "Game", "Garden", "Gas", "Glass", "Group",
+            "Health", "Hill", "Hospital",
+            "Idea", "Image", "Industry", "Island",
+            "Jewelry", "Job",
+            "Kitchen",
+            "Land", "Law", "Leaves", "Leg", "Letter", "Life",
+            "Magazine", "Market", "Metal", "Mirror", "Mobile", "Money", "Morning", "Mother", "Mountain", "Movie",
+            "Name", "Nest", "News",
+            "Ocean", "Oil",
+            "Painter", "Park", "Party", "Pen", "Pencil", "Person", "Picture", "Pillow", "Place", "Plant", "Pond",
+            "Rain", "Rate", "Result", "Ring", "Road", "Rock", "Rocket", "Room", "Rope", "Rule",
+            "Sale", "School", "Shape", "Shapes", "Ship", "Shop", "Sister", "Site", "Skin", "Snacks", "Son", "Song", "Sort", "Sound", "Soup", "Sports", "State", "Stone", "Street", "System",
+            "Taxi", "Tea", "Teacher", "Team", "Toy", "Tractor", "Trade", "Train",
+            "Video", "View",
+            "Water", "Waterfall", "Week", "Women", "Wood", "Word",
+            "Year", "Yesterday"]"""
+
 picture =[
 "          \n          \n          \n          \n           \n           ",
 "          \n          \n          \n          \n      /    \n     /     ",
@@ -13,7 +39,10 @@ picture =[
 "-------|  \n |    \|  \n ◯    |  \n/|\    |  \n/     / \  \n     /   \ ",
 "-------|  \n |    \|  \n ◯    |  \n/|\    |  \n/ \   / \  \n     /   \ "]
 
-word = input("Word: ").lower()
+if wordlist == []:
+    word = input("Word: ").lower()
+else:
+    word = wordlist[randint(0, len(wordlist)-1)].lower()
 print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
 drawn = 0
